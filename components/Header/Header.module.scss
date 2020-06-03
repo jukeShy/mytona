@@ -1,0 +1,15 @@
+/* 
+
+  HEADER STYLES
+
+*/
+.page-header {
+  margin-bottom: 10px;
+  background-color: var(--color-dark);
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+  }
+
+}

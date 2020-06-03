@@ -1,0 +1,43 @@
+.info {
+  position: relative;
+  
+  &__image {
+    position: relative;
+    padding-bottom: 100%;
+    margin: -10px -25px 15px;
+
+    img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+
+    }
+
+  }
+
+  &__body {
+    margin-bottom: 50px;
+    > * + * {
+      margin-top: 10px;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    color: var(--color-light);
+  }
+
+  &__text {
+    color: var(--color-text);
+  }
+
+}
+
+@media screen and (min-width: 40rem) {
+  .info {
+    &__image {
+      margin: 0 0 0;
+    }
+  }
+}

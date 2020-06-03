@@ -1,0 +1,71 @@
+/* 
+
+  CARD STYLES
+
+*/
+.card {
+  display: flex;
+  height: 100%;
+  background-color: var(--color-subdark);
+  box-shadow: 0px 0px 10px rgba(29, 99, 234, 0.48);
+  text-decoration: none;
+  
+
+  &__media {
+    position: relative;
+    flex: 1;
+    min-width: 145px;
+    padding-bottom: 37%;
+
+    img {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+
+  }
+
+  &__body {
+    flex: 2;
+    padding: 16px;
+    > * + * {
+      margin-top: 10px;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    color: var(--color-light);
+  }
+
+  &__text {
+    color:var(--color-text);
+  }
+
+}
+
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-list > * + * {
+  margin-left: 20px;
+}
+
+.card-list__item {
+  flex: 1;
+  max-width: 50px;
+}
+
+@media screen and (min-width: 60rem) {
+  .card {
+    flex-direction: column;
+    &__media {
+      flex: 0;
+      padding-bottom: 88%;
+    }
+  }
+}
