@@ -97,7 +97,9 @@ export async function getServerSideProps(context) {
 
   const { data } = await apiService.get({ query });
 
-  return { props: { location: data.location } };
+  return {
+    props: { location: data.location },
+  };
 }
 
 export default Location;

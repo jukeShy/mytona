@@ -16,7 +16,7 @@ const Title = ({ children, Type = 'h2' }) => {
 };
 
 const Body = ({ children, start, countInc }) => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(3);
   const [isFetching, setFetching] = useInfinityScroll(loadMore);
 
   useEffect(() => {
